@@ -14,6 +14,10 @@
 		18C2EBAE1B6F3A85000DC5B8 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 18C2EBAD1B6F3A85000DC5B8 /* Images.xcassets */; };
 		18C2EBB11B6F3A85000DC5B8 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 18C2EBAF1B6F3A85000DC5B8 /* LaunchScreen.xib */; };
 		18C2EBBD1B6F3A85000DC5B8 /* LoginDemoTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 18C2EBBC1B6F3A85000DC5B8 /* LoginDemoTests.m */; };
+		18C2EBCB1B6F4498000DC5B8 /* NSString+URLEncoding.m in Sources */ = {isa = PBXBuildFile; fileRef = 18C2EBCA1B6F4498000DC5B8 /* NSString+URLEncoding.m */; };
+		18C2EBCD1B6F4B71000DC5B8 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 18C2EBCC1B6F4B70000DC5B8 /* Foundation.framework */; };
+		18C2EBCF1B6F4B80000DC5B8 /* Security.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 18C2EBCE1B6F4B80000DC5B8 /* Security.framework */; };
+		18C2EBD11B6F4B95000DC5B8 /* SystemConfiguration.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 18C2EBD01B6F4B95000DC5B8 /* SystemConfiguration.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -33,13 +37,18 @@
 		18C2EBA41B6F3A85000DC5B8 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		18C2EBA51B6F3A85000DC5B8 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
 		18C2EBA71B6F3A85000DC5B8 /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
-		18C2EBA81B6F3A85000DC5B8 /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		18C2EBA81B6F3A85000DC5B8 /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; wrapsLines = 0; };
 		18C2EBAB1B6F3A85000DC5B8 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		18C2EBAD1B6F3A85000DC5B8 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
 		18C2EBB01B6F3A85000DC5B8 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/LaunchScreen.xib; sourceTree = "<group>"; };
 		18C2EBB61B6F3A85000DC5B8 /* LoginDemoTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = LoginDemoTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		18C2EBBB1B6F3A85000DC5B8 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		18C2EBBC1B6F3A85000DC5B8 /* LoginDemoTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LoginDemoTests.m; sourceTree = "<group>"; };
+		18C2EBC91B6F4498000DC5B8 /* NSString+URLEncoding.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSString+URLEncoding.h"; sourceTree = "<group>"; };
+		18C2EBCA1B6F4498000DC5B8 /* NSString+URLEncoding.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSString+URLEncoding.m"; sourceTree = "<group>"; };
+		18C2EBCC1B6F4B70000DC5B8 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		18C2EBCE1B6F4B80000DC5B8 /* Security.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Security.framework; path = System/Library/Frameworks/Security.framework; sourceTree = SDKROOT; };
+		18C2EBD01B6F4B95000DC5B8 /* SystemConfiguration.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SystemConfiguration.framework; path = System/Library/Frameworks/SystemConfiguration.framework; sourceTree = SDKROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -47,6 +56,9 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				18C2EBD11B6F4B95000DC5B8 /* SystemConfiguration.framework in Frameworks */,
+				18C2EBCF1B6F4B80000DC5B8 /* Security.framework in Frameworks */,
+				18C2EBCD1B6F4B71000DC5B8 /* Foundation.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -63,6 +75,9 @@
 		18C2EB941B6F3A85000DC5B8 = {
 			isa = PBXGroup;
 			children = (
+				18C2EBD01B6F4B95000DC5B8 /* SystemConfiguration.framework */,
+				18C2EBCE1B6F4B80000DC5B8 /* Security.framework */,
+				18C2EBCC1B6F4B70000DC5B8 /* Foundation.framework */,
 				18C2EB9F1B6F3A85000DC5B8 /* LoginDemo */,
 				18C2EBB91B6F3A85000DC5B8 /* LoginDemoTests */,
 				18C2EB9E1B6F3A85000DC5B8 /* Products */,
@@ -81,6 +96,8 @@
 		18C2EB9F1B6F3A85000DC5B8 /* LoginDemo */ = {
 			isa = PBXGroup;
 			children = (
+				18C2EBC91B6F4498000DC5B8 /* NSString+URLEncoding.h */,
+				18C2EBCA1B6F4498000DC5B8 /* NSString+URLEncoding.m */,
 				18C2EBA41B6F3A85000DC5B8 /* AppDelegate.h */,
 				18C2EBA51B6F3A85000DC5B8 /* AppDelegate.m */,
 				18C2EBA71B6F3A85000DC5B8 /* ViewController.h */,
@@ -221,6 +238,7 @@
 			files = (
 				18C2EBA91B6F3A85000DC5B8 /* ViewController.m in Sources */,
 				18C2EBA61B6F3A85000DC5B8 /* AppDelegate.m in Sources */,
+				18C2EBCB1B6F4498000DC5B8 /* NSString+URLEncoding.m in Sources */,
 				18C2EBA31B6F3A85000DC5B8 /* main.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -347,7 +365,10 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				GCC_PRECOMPILE_PREFIX_HEADER = NO;
+				GCC_PREFIX_HEADER = "";
 				INFOPLIST_FILE = LoginDemo/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.1;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
@@ -357,7 +378,10 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				GCC_PRECOMPILE_PREFIX_HEADER = NO;
+				GCC_PREFIX_HEADER = "";
 				INFOPLIST_FILE = LoginDemo/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.1;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
@@ -416,6 +440,7 @@
 				18C2EBC21B6F3A85000DC5B8 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		18C2EBC31B6F3A85000DC5B8 /* Build configuration list for PBXNativeTarget "LoginDemoTests" */ = {
 			isa = XCConfigurationList;
@@ -424,6 +449,7 @@
 				18C2EBC51B6F3A85000DC5B8 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

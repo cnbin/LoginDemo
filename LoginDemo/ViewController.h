@@ -8,7 +8,17 @@
 
 #import <UIKit/UIKit.h>
 
-@interface ViewController : UIViewController
+@interface ViewController : UIViewController<NSXMLParserDelegate,NSURLConnectionDelegate>
+{
+    UITextField * phonenumText;
+    UITextField * passwordText;
+    UIButton *loginButton;
+}
+
+// 当前标签的名字 ,currentTagName 用于存储正在解析的元素名
+@property (strong ,nonatomic) NSString * currentTagName;
+
+@property (strong,nonatomic) NSMutableDictionary * dict;
 
 
 @end
